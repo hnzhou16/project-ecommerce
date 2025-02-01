@@ -1,0 +1,29 @@
+.filterStatusBtn {
+  font-family: Roboto;
+  border: 1px solid #919191;
+  border-radius: 5px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding: 0 10px;
+  margin-right: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .filterStatusName {
+    font-size: 12px;
+    font-weight: 600;
+    align-content: center;
+  }
+
+  .filterStatusAction {
+    color: #919191;
+    align-content: center;
+    margin-left: 5px;
+  }
+
+}

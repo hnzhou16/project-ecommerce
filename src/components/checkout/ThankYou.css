@@ -1,0 +1,32 @@
+.thankYou {
+  font-family: Roboto;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thankYou h1 {
+  width: 100%;
+  margin: 100px 0;
+  padding: 20px 0;
+  text-align: center;
+}
+.thankYou button {
+  height: 50px;
+  width: 600px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.thankYou button:hover {
+  cursor: pointer;
+  background-color: #545454;
+  filter: brightness(95%);
+}
+
+/*# sourceMappingURL=ThankYou.css.map */

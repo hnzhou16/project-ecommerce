@@ -1,0 +1,72 @@
+.signUpImageGallery {
+  width: 50vw;
+  /* make the overflow hidden so the scroll bar won't show up */
+  overflow: hidden;
+
+  .back-button-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+
+    .back-button {
+      width: auto;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border: none;
+      border-radius: 26px;
+      padding: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      .arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        transition: margin-right 0.3s ease-in-out;
+      }
+
+      .text {
+        font-weight: bold;
+        color: #000000;
+        /* set the text opacity and width to 0 to make it invisible */
+        opacity: 0;
+        width: 0;
+        transition: all 0.3s ease;
+      }
+
+      /* once the container is hovered, make the text inside visible */
+
+      &:hover {
+        padding-right: 30px;
+
+        .arrow {
+          margin-right: 8px;
+        }
+
+        .text {
+          opacity: 1;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .slide {
+    /* position relative to make the text content position absolute */
+    height: 100vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right top;
+    }
+
+  }
+}

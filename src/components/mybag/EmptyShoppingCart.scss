@@ -1,0 +1,34 @@
+
+.emptyShoppingCartBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center !important;
+  height: 55vh;
+  padding-top: 40px;
+  margin-top: 7%;
+
+  h1 {
+    font-size: 32px;
+    line-height: .9824561404;
+    font-weight: 700;
+    text-align: center;
+    font-family: Calibre, Verlag, Helvetica, sans-serif;
+  }
+
+  .whatsNewBtn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+}

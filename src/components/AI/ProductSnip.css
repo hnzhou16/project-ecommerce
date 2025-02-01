@@ -1,0 +1,21 @@
+.productSnipMain {
+  background-color: white;
+  border-radius: 5px;
+  width: 60%;
+  padding: 5px;
+  margin-top: 10px;
+}
+.productSnipMain:hover {
+  cursor: pointer;
+  scale: 0.95;
+}
+.productSnipMain img {
+  width: 100%;
+  border-radius: 5px;
+}
+.productSnipMain .name {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=ProductSnip.css.map */

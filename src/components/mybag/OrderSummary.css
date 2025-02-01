@@ -1,0 +1,129 @@
+.orderSummaryContainer {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /*width: 350px;*/
+  position: relative;
+  /*left: 500px;*/
+}
+.orderSummaryContainer .orderSummaryTitle {
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 10px;
+}
+.orderSummaryContainer .orderSummaryInfoSections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 0.5px solid lightgray;
+}
+.orderSummaryContainer .orderSummaryInfoSections .orderSummaryInfoSectionsLeft {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.orderSummaryContainer .estimatedTotal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.orderSummaryContainer .estimatedTotal .estimatedTotalTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.orderSummaryContainer .estimatedTotal .estimatedTotalBottom {
+  /*display: inline-flex;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  font-size: 12px;
+  position: relative;
+  /*min-width: 100px;*/
+  /*max-width: 272.5px;*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+.orderSummaryContainer .estimatedTotal .estimatedTotalBottom .imageContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.orderSummaryContainer .estimatedTotal .estimatedTotalBottom .imageContainer img:nth-child(1) {
+  height: 13px;
+}
+.orderSummaryContainer .estimatedTotal .estimatedTotalBottom .imageContainer img:nth-child(2) {
+  height: 23px;
+}
+.orderSummaryContainer .pay {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+.orderSummaryContainer .pay button {
+  margin: 0;
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+}
+.orderSummaryContainer .pay button:hover {
+  cursor: pointer;
+  background-color: #545454;
+}
+
+.moreInfo img {
+  height: 15px;
+}
+.moreInfo img:hover {
+  cursor: pointer;
+}
+.moreInfo .popUp {
+  position: absolute;
+  right: -105px;
+  bottom: 30px;
+  font-size: 13px;
+  width: 200px;
+  background-color: white;
+  word-spacing: 1px;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.moreInfo .popUp::after, .moreInfo .popUp::before {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Adjust this value to move the triangle up or down */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.moreInfo .popUp::before {
+  bottom: -21px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.moreInfo .popUp::after {
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+/*# sourceMappingURL=OrderSummary.css.map */

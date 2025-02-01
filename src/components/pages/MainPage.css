@@ -1,0 +1,9 @@
+.mainPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+/*# sourceMappingURL=MainPage.css.map */

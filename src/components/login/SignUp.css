@@ -1,0 +1,152 @@
+.signUpFormContainer {
+  width: 50%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUpFormContainer .signupForm {
+  width: 420px;
+  margin: 0 auto;
+  /* margin right take the remaining space of signUpForm and padding */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.signUpFormContainer .signupForm .logo {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 15px;
+}
+.signUpFormContainer .signupForm .title {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+.signUpFormContainer .signupForm form {
+  width: 100%;
+}
+.signUpFormContainer .signupForm form .inputGroup {
+  margin-bottom: 20px;
+}
+.signUpFormContainer .signupForm form .inputGroup .input-wrapper {
+  position: relative;
+  width: 100%;
+}
+.signUpFormContainer .signupForm form .inputGroup .input-wrapper label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.signUpFormContainer .signupForm form .inputGroup .input-wrapper input {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #919191;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.signUpFormContainer .signupForm form .inputGroup .input-wrapper input:focus {
+  outline: none;
+  background-color: white;
+  border-color: #919191;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+.signUpFormContainer .signupForm form .inputGroup .input-wrapper input:active {
+  background-color: white;
+}
+.signUpFormContainer .signupForm form .inputGroup .input-wrapper .error-icon {
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  transform: translateY(-50%);
+  color: #000000;
+  font-size: 30px;
+  cursor: pointer;
+}
+.signUpFormContainer .signupForm form .inputGroup .input-wrapper .showOrHiddenPassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.signUpFormContainer .signupForm form .inputGroup .error-message {
+  color: #c8102e;
+  font-size: 14px;
+  margin-top: 6px;
+}
+.signUpFormContainer .signupForm form .inputGroup .password-criteria {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.signUpFormContainer .signupForm form .inputGroup .password-criteria .criteria-column {
+  flex-basis: 48%;
+}
+.signUpFormContainer .signupForm form .inputGroup .password-criteria .criteria-column .criteriaItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.signUpFormContainer .signupForm form .inputGroup .password-criteria .criteria-column .criteriaItem .check {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.signUpFormContainer .signupForm form .inputGroup .password-criteria .criteria-column .criteriaItem p {
+  margin: 0;
+  font-size: 15px;
+  color: #666;
+}
+.signUpFormContainer .signupForm form .inputGroup .password-criteria .criteria-column .criteriaItem.met .check {
+  opacity: 1;
+}
+.signUpFormContainer .signupForm form .inputGroup.error input {
+  border-color: #c8102e;
+}
+.signUpFormContainer .signupForm .createAccountButton {
+  margin: 0;
+  width: 100%;
+  height: 52px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.signUpFormContainer .signupForm .createAccountButton:hover {
+  background-color: #545454;
+}
+.signUpFormContainer .signupForm .createAccountButton:disabled {
+  background-color: #545454;
+  cursor: not-allowed;
+}
+.signUpFormContainer .signupForm .signInButton {
+  margin: 20px 0 0 0;
+  width: 100%;
+  height: 52px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.signUpFormContainer .signupForm .signInButton:hover {
+  color: white;
+  background-color: black;
+}
+
+/*# sourceMappingURL=SignUp.css.map */

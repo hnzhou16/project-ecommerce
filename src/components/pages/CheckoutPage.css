@@ -1,0 +1,150 @@
+.checkoutMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+.checkoutMain h1 {
+  padding-top: 20px;
+  text-align: center;
+}
+.checkoutMain .checkoutWrapper {
+  max-width: 90rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 50px;
+}
+.checkoutMain .checkoutWrapper .checkoutBody {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .pageTitle {
+  font-weight: 600;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section {
+  width: 700px;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .sectionTitle {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section input {
+  width: 100%;
+  height: 50px;
+  margin: 8px 0;
+  padding: 14px 16px;
+  font-size: 15px;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section input:focus {
+  border: 1px solid black;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .inputError {
+  border: 1px solid #c8102e;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .error {
+  color: #c8102e;
+  margin-bottom: 10px;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section select {
+  display: block;
+  height: 50px;
+  margin: 8px 0 15px 0;
+  padding: 14px 16px;
+  font-size: 15px;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .country {
+  width: 100%;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .userInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .userInfo .userName {
+  flex-grow: 1;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .cityInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .shippingOptions .option {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .shippingOptions .option .optionCheckbox {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid #545454;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .shippingOptions .option .optionCheckboxClicked {
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .shippingOptions .option .optionCheckboxClicked::after {
+  content: "";
+  height: 9px;
+  border-radius: 50%;
+  width: 9px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .section .shippingOptions .option .optionContent .top {
+  font-weight: 600;
+}
+.checkoutMain .checkoutWrapper .checkoutBody button {
+  width: 100px;
+  height: 35px;
+  margin: 30px;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .goToNext {
+  margin: 0;
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+}
+.checkoutMain .checkoutWrapper .checkoutBody .goToNext:hover {
+  cursor: pointer;
+  background-color: #545454;
+}
+.checkoutMain .checkoutWrapper .orderSummary {
+  width: 350px;
+}
+
+/*# sourceMappingURL=CheckoutPage.css.map */

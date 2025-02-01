@@ -1,0 +1,78 @@
+.productCard {
+  width: 310px;
+  height: 480px;
+  margin: 0 12px 30px 12px;
+}
+.productCard .productImage {
+  width: 305px;
+  height: 375px;
+}
+.productCard .productSwatches {
+  width: 305px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.productCard .productSwatches .swatchesGroup {
+  width: 212px;
+  height: 100%;
+  overflow: hidden;
+}
+.productCard .productSwatches .swatchesGroup .swatchesGroupSlider {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  padding: 0 8px;
+  animation: slideRight 1s forwards;
+  transition: all 0.5s ease-in-out;
+}
+.productCard .productSwatches .swatchesGroup .swatchesGroupSlider .swatch, .productCard .productSwatches .swatchesGroup .swatchesGroupSlider .swatchSelected {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #919191;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.productCard .productSwatches .swatchesGroup .swatchesGroupSlider .swatch:hover, .productCard .productSwatches .swatchesGroup .swatchesGroupSlider .swatchSelected:hover {
+  outline: 1px solid black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.productCard .productSwatches .swatchesGroup .swatchesGroupSlider .swatchSelected {
+  outline: 1px solid black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.productCard .productSwatches .swatchesPrev, .productCard .productSwatches .swatchesNext {
+  border: none;
+  background-color: transparent;
+  width: 10%;
+  height: 100%;
+  font-size: 35px;
+  text-align: center;
+  transform: translateY(-10%);
+  margin: 0;
+}
+.productCard .productInfo {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.productCard .productInfo .name {
+  width: 70%;
+  font-weight: 600;
+}
+.productCard .productInfo .price {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=ProductCard.css.map */

@@ -1,0 +1,189 @@
+h1 {
+  margin: 10px 0;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+.productPageInfo {
+  margin: 0 auto;
+  width: 1315px;
+  height: 810px;
+  display: flex;
+  flex-direction: row;
+  background-color: #f8f8f8;
+
+  .category {
+    font-size: 15px;
+    font-weight: 500;
+    color: #919191;
+  }
+
+  .carousel {
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carouselArrows {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 35px;
+        font-weight: 400;
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+
+  .productDetails {
+    width: 50%;
+    height: 100%;
+    padding: 10px 12px;
+
+    .productPrice {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .number {
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      p {
+        margin-left: 5px;
+      }
+    }
+
+    .productColor {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 20px;
+
+      p {
+        margin-left: 10px;
+      }
+    }
+
+    .productSwatches {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+
+      .swatch, .swatchSelected {
+        width: 35px;
+        height: 35px;
+        border: 1px solid #919191;
+        border-radius: 50%;
+
+        &:hover {
+          outline: 1px solid #919191;
+          border: 2px solid white;
+          cursor: pointer;
+        }
+      }
+
+      .swatchSelected {
+        outline: 1px solid black;
+        border: 2px solid white;
+        cursor: pointer;
+      }
+
+    }
+
+    .productSizes {
+      width: 100%;
+      margin-bottom: 20px;
+
+      .selectSizeError {
+        width: 100%;
+        height: 60px;
+        border: 1px solid #c8102e;
+        background-color: #ffe8e8;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 15px;
+        margin: 30px 0;
+
+        .errorIcon {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          border: 2px solid #c8102e;
+          color: #c8102e;
+          font-size: 15px;
+          font-weight: 600;
+          text-align: center;
+        }
+
+        p {
+          margin-left: 10px;
+        }
+      }
+
+      .selectSize {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+          margin-left: 10px;
+        }
+      }
+
+      .sizes {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+
+        button {
+          min-width: 35px;
+          height: 35px;
+          margin: 0;
+          font-size: 15px;
+          font-weight: 600;
+          background-color: white;
+          border: 1px solid #e6e6e6;
+          border-radius: 5px;
+
+          &:hover {
+            border: 1px solid black;
+          }
+        }
+
+        .selected {
+          color: white;
+          background-color: black;
+        }
+
+      }
+    }
+  }
+}

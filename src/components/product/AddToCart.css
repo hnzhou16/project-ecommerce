@@ -1,0 +1,111 @@
+.addToBagContainer {
+  background: #ffffff;
+  border: 0.0625rem solid #e6e6e6;
+  border-radius: 0.25rem;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 15px;
+  width: 100%;
+}
+.addToBagContainer .ship {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: 0.0625rem solid #e6e6e6;
+  padding-bottom: 15px;
+}
+.addToBagContainer .ship .shipLabel {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  margin-bottom: 0;
+}
+.addToBagContainer .ship .shipLabel input[type=radio] {
+  width: 15px;
+  accent-color: black;
+  margin-right: 5px;
+}
+.addToBagContainer .ship span {
+  margin-left: 20px;
+  color: #53565a;
+  line-height: 1.25rem;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.addToBagContainer .pickupContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.addToBagContainer .pickupContainer .iconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.addToBagContainer .pickupContainer .iconContainer .pickupIcon {
+  width: 20px;
+  margin-right: 5px;
+}
+.addToBagContainer .pickupContainer .iconContainer h2 {
+  font-weight: 400;
+}
+.addToBagContainer .pickupContainer .expand {
+  font-weight: 800;
+  font-size: larger;
+}
+.addToBagContainer .pickupContainer .expand .addIcon {
+  transition: 0.5s ease-in-out;
+  transform: rotate(90deg);
+}
+.addToBagContainer .pickupContainer .expand .removeIcon {
+  transition: 0.5s ease-in-out;
+}
+.addToBagContainer .pickUpInfoContainer {
+  margin: 25px;
+}
+.addToBagContainer .pickUpInfoContainer input {
+  margin-top: 10px;
+  accent-color: black;
+}
+.addToBagContainer .buttonContainer {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.addToBagContainer .buttonContainer button {
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.addToBagContainer .buttonContainer button:hover {
+  background-color: #545454;
+}
+.addToBagContainer .otherStoreContainer {
+  width: 100%;
+}
+.addToBagContainer .otherStoreContainer button {
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  color: black;
+  border-radius: 0.25rem;
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+/*# sourceMappingURL=AddToCart.css.map */

@@ -1,0 +1,69 @@
+.filterGroupCheckboxButtons {
+  padding: 8px 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+.filterGroupCheckboxButtons input[type=checkbox]:checked {
+  accent-color: #545454;
+}
+.filterGroupCheckboxButtons label {
+  padding-left: 5px;
+}
+
+.filterSizeDivider {
+  width: 100%;
+  border: 1px dashed #d5d5d5;
+}
+
+.filterGroupSizeButton {
+  min-width: 30px;
+  height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid #919191;
+  border-radius: 5px;
+  margin: 5px 5px;
+  text-wrap: normal;
+  display: inline-block;
+  background-color: white;
+}
+.filterGroupSizeButton:hover {
+  border: 1px solid black;
+}
+.filterGroupSizeButton.sizeSelected {
+  background-color: black;
+  color: white;
+}
+
+.filterGroupColorButtons {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin: 10px 10px 10px 0;
+  cursor: pointer;
+}
+.filterGroupColorButtons:hover img {
+  box-shadow: 0 0 0 4px lightgray;
+}
+.filterGroupColorButtons img {
+  width: 24px;
+  height: 24px;
+  outline: 1px solid #d5d5d5;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.filterGroupColorButtons img.swatchSelected {
+  outline: 1px solid black;
+}
+.filterGroupColorButtons img.swatchUnselected {
+  outline: 1px solid #d5d5d5;
+}
+.filterGroupColorButtons label {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=FilterButton.css.map */
