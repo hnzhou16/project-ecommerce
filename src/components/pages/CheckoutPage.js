@@ -3,7 +3,7 @@ import "./CheckoutPage.css";
 import React from "react";
 import {useEffect, useRef, useState} from "react";
 import {useJsApiLoader} from '@react-google-maps/api'
-import {authAPI, mapsAPIKey} from "../consts";
+import {authAPI} from "../consts";
 import {Library} from "@googlemaps/js-api-loader";
 import {HeaderConcise} from "../shared/HeaderConcise";
 import {Footer} from "../shared/Footer";
@@ -47,7 +47,7 @@ export const CheckoutPage = () => {
   })
 
   const {isLoaded} = useJsApiLoader({
-    googleMapsApiKey: mapsAPIKey,
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     libraries: libs
   })
   const autoCompleteRef = useRef(null)
