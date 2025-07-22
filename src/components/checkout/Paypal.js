@@ -1,5 +1,5 @@
 import {useEffect} from 'react'
-import {cartAPI, paypalClientID} from "../consts"
+import {cartAPI} from "../consts"
 import './Paypal.css'
 import React from 'react';
 import {useNavigate} from "react-router-dom";
@@ -9,6 +9,7 @@ import {clearCart} from "../../redux/actions/shoppingCartAction";
 export const Paypal = ({amount}) => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
+  const paypalClientID = process.env.REACT_APP_PAYPAL_CLIENT_ID
 
   const userId = useSelector(state => state.authReducer.userId)
 
