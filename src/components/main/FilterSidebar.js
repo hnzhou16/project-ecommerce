@@ -5,7 +5,7 @@ import './FilterSideBar.css'
 import {fetchFilter, fetchFilteredProducts} from "../../redux/actions/filterAction";
 import {FilterButton} from "./FilterButton";
 
-export const FilterSidebar = () => {
+export const FilterSidebar = ({ isMobileFilterOpen, toggleMobileFilter }) => {
   const dispatch = useDispatch()
 
   const requestBody = useSelector(state => state.filterReducer.requestBody)
@@ -41,7 +41,12 @@ export const FilterSidebar = () => {
       prevState.map((isMore, i) => i === index ? !isMore : isMore))
   }
 
-  return <div className='filterSideBar'>
+  return <div className={`filterSideBar ${isMobileFilterOpen ? 'filterSideBarMobileOpen' : ''}`}>
+    {/* Mobile filter header */}
+    <div className="mobileFilterHeader">
+      <h3>Filters</h3>
+      <button className="mobileFilterClose" onClick={toggleMobileFilter}>×</button>
+    </div>
     {filterList
       && Object.keys(filterList).map((group, index) => {
         const isVisible = filterExpand[index]

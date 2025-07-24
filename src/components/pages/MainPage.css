@@ -4,6 +4,38 @@
   justify-content: center;
   margin: 0 auto;
   background-color: #f8f8f8;
+  position: relative;
+}
+
+/* Mobile filter overlay */
+.mobileFilterOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  display: none;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .mainPage {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  
+  .mobileFilterOverlay {
+    display: block;
+  }
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  .mainPage {
+    padding: 0 5px;
+  }
 }
 
 /*# sourceMappingURL=MainPage.css.map */

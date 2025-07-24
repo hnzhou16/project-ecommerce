@@ -7,6 +7,37 @@
   flex-direction: column;
   align-items: flex-start;
   font-family: Roboto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Mobile filter header - hidden on desktop */
+.mobileFilterHeader {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 10px;
+}
+
+.mobileFilterHeader h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mobileFilterClose {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .filterSideBar .filterGroup {
   width: 100%;
@@ -114,6 +145,45 @@
   100% {
     transform: rotate(0deg);
     transform-origin: center;
+  }
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .filterSideBar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 320px;
+    height: 100vh;
+    z-index: 999;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+  }
+  
+  .filterSideBarMobileOpen {
+    transform: translateX(100%);
+  }
+  
+  .mobileFilterHeader {
+    display: flex;
+  }
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  .filterSideBar {
+    width: 280px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filterSideBar {
+    width: 100%;
+    left: -100%;
+    padding: 0 20px;
   }
 }
 

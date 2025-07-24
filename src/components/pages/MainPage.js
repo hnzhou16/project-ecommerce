@@ -13,6 +13,7 @@ import {clearFilter} from "../../redux/actions/filterAction";
 export const MainPage = () => {
   const dispatch = useDispatch()
   const [isSticky, setIsSticky] = useState(false);
+  const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
   const sentinelRef = useRef(null); // set up for the empty div in 'return'
 
   useEffect(() => {
@@ -47,6 +48,10 @@ export const MainPage = () => {
     };
   }, []);
 
+  const toggleMobileFilter = () => {
+    setIsMobileFilterOpen(!isMobileFilterOpen);
+  };
+
   return (
     <>
       {/* use sentinel to control if the header is sticky */}
@@ -54,9 +59,11 @@ export const MainPage = () => {
       <Header isSticky={isSticky}/>
       {/* use unique className for main otherwise styling will be overwritten */}
       <div className="mainPage">
-        <FilterSidebar/>
-        <ProductsContainer/>
+        <FilterSidebar isMobileFilterOpen={isMobileFilterOpen} toggleMobileFilter={toggleMobileFilter}/>
+        <ProductsContainer toggleMobileFilter={toggleMobileFilter}/>
       </div>
+      {/* Mobile filter overlay */}
+      {isMobileFilterOpen && <div className="mobileFilterOverlay" onClick={toggleMobileFilter}></div>}
       <ChatModal/>
       <Footer/>
     </>

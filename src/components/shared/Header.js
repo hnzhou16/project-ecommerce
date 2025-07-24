@@ -66,7 +66,7 @@ export const Header = ({isSticky}) => {
         <div className='headerNav'>
           <div className="headerLeft">
             <img
-              src="https://project-ecommerce-images.s3.us-east-1.amazonaws.com/assets/logo_hz.png"
+              src="https://project-ecommerce-images.s3.us-east-1.amazonaws.com/assets/logo_hugzest.png"
               alt="Logo" onClick={() => navigate('/')}
             />
 
