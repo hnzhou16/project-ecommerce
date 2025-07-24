@@ -8,6 +8,40 @@
   padding: 30px 12px;
   margin: 0;
 }
+
+/* Mobile filter toggle button - hidden on desktop */
+.mobileFilterToggle {
+  display: none;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 15px;
+}
+
+.mobileFilterButton {
+  background-color: #ffffff;
+  border: 1px solid #d5d5d5;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.mobileFilterButton:hover {
+  background-color: #f8f8f8;
+  border-color: #bbb;
+}
+
+.filterIcon {
+  font-size: 18px;
+}
+
 .mainProducts .filterStatus {
   border-top: 1px solid #d5d5d5;
   width: 100%;
@@ -17,6 +51,42 @@
   align-content: center;
   flex-wrap: wrap;
   padding: 10px 0;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .mainProducts {
+    width: 100%;
+    max-width: none;
+    padding: 20px 15px;
+  }
+  
+  .mobileFilterToggle {
+    display: block;
+  }
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  .mainProducts {
+    padding: 15px 10px;
+  }
+  
+  .mobileFilterButton {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainProducts {
+    padding: 10px 5px;
+  }
+  
+  .mobileFilterButton {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=ProductsContainer.css.map */

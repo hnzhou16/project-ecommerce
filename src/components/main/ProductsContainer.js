@@ -4,11 +4,19 @@ import {useSelector} from "react-redux";
 import {ProductCard} from "./ProductCard";
 import {FilterCheckedButton} from "./FilterCheckedButton";
 
-export const ProductsContainer = () => {
+export const ProductsContainer = ({ toggleMobileFilter }) => {
     const productList = useSelector(state => state.filterReducer.productList)
     const checkedItems = useSelector(state => state.filterReducer.checkedItems)
 
     return <div className='mainProducts'>
+        {/* Mobile filter toggle button */}
+        <div className="mobileFilterToggle">
+            <button className="mobileFilterButton" onClick={toggleMobileFilter}>
+                <span className="filterIcon">⚙</span>
+                Filters
+            </button>
+        </div>
+        
         {Object.keys(checkedItems).length > 0 &&
           <div className="filterStatus">
               {/* can NOT directly use for loop in return, MUST use Object.entries to turn all key-value paris into array*/}
