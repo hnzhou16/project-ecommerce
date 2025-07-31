@@ -25,12 +25,12 @@ export const HeaderConcise = ({isSticky}) => {
     } else {
       dispatch(logout())
     }
-  }, []);
+  }, [dispatch, checkTokenExpiration]);
 
   useEffect(() => {
     const shoppingCartCount = shoppingCart && shoppingCart.reduce((total, item) => total + item.quantity, 0);
     dispatch(setCartItemsCount(shoppingCartCount))
-  }, [shoppingCart, isLogin]);
+  }, [dispatch, shoppingCart, isLogin]);
 
   const handleOpenLoginPage = () => {
     navigate('/account/signup')
@@ -47,7 +47,7 @@ export const HeaderConcise = ({isSticky}) => {
         <div className='headerNav'>
           <div className="headerLeft">
             <img
-              src="https://project-ecommerce-images.s3.us-east-1.amazonaws.com/assets/logo_hz.png"
+              src="https://project-ecommerce-images.s3.us-east-1.amazonaws.com/assets/logo_hugzest.png"
               alt="Logo" onClick={() => navigate('/')}
             />
           </div>

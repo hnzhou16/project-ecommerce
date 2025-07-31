@@ -1,10 +1,15 @@
 .footer {
-  position: fixed;
-  bottom: 0;
+  //position: fixed;
+  //bottom: 0;
   border-top: 2px solid #f8f8f8;
   background-color: white;
   width: 100%;
   padding: 20px calc((100% - 1330px)/2);
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
   .footContainer {
     width: 100%;
@@ -22,19 +27,15 @@
       justify-content: flex-end;
       gap: 20px;
 
-      a img {
+      img {
         height: 20px;
         filter: brightness(1);
         transition: all 0.15s linear;
       }
 
-      a img:hover {
+      img:hover {
         filter: brightness(2.5);
       }
     }
-  }
-  a {
-    text-decoration: none;
-    color: black;
   }
 }

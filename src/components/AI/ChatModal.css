@@ -11,8 +11,8 @@
 .modalHelpBox .helpButton {
   position: absolute;
   background-color: #262626;
-  right: 20px;
-  bottom: 20px;
+  right: -140px;
+  bottom: -80px;
   width: 70px;
   height: 70px;
   pointer-events: auto;

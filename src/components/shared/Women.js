@@ -2,7 +2,6 @@ import "./Women.css"
 import React from "react"
 import {useDispatch, useSelector} from "react-redux";
 import {clearFilter, filterGender, filterSelected} from "../../redux/actions/filterAction";
-import {useNavigate} from "react-router-dom";
 
 export const Women = ({handleHover}) => {
   const dispatch = useDispatch()

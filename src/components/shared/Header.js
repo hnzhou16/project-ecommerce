@@ -30,7 +30,7 @@ export const Header = ({isSticky}) => {
     } else {
       dispatch(logout())
     }
-  }, []);
+  }, [checkTokenExpiration, dispatch]);
 
   const handleHover = (index, newValue) => {
     // Create a new array with the updated element
@@ -49,7 +49,7 @@ export const Header = ({isSticky}) => {
   useEffect(() => {
     const shoppingCartCount = shoppingCart && shoppingCart.reduce((total, item) => total + item.quantity, 0);
     dispatch(setCartItemsCount(shoppingCartCount))
-  }, [shoppingCart, isLogin]);
+  }, [dispatch, shoppingCart, isLogin]);
 
   const handleOpenLoginPage = () => {
     navigate('/account/signup')
