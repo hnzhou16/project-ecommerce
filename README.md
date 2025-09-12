@@ -36,8 +36,7 @@ A modern, responsive e-commerce platform built with React that provides a seamle
 
 ### Interactive Features
 
-- **Google Maps Integration**: Store locator and delivery tracking with interactive maps
-- **Social Features**: User reviews
+- **Google Maps Integration**: Address autocomplete 
 
 ### Security Features
 
