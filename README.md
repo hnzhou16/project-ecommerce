@@ -2,6 +2,8 @@
 
 A modern, responsive e-commerce platform built with React that provides a seamless shopping experience with advanced features including AI-powered product recommendations and integrated payment processing.
 
+**Live Demo**: [https://hugzest.com/](https://hugzest.com/)
+
 ## Features
 
 ### User Experience
@@ -23,16 +25,14 @@ A modern, responsive e-commerce platform built with React that provides a seamle
 
 - **Shopping Bag**: Add, remove, and modify items with real-time price calculations
 - **Checkout Process**: Streamlined multi-step checkout with address and payment information
-- **Order Management**: Track orders from placement to delivery with status updates
 
 ### Payment Integration
 
 - **PayPal Integration**: Secure payment processing with PayPal REST SDK
-- **Order Confirmation**: Detailed order summaries
 
 ### AI-Powered Features
 
-- **Product Recommendations**: AI-driven product suggestions based on user behavior
+- **Product Recommendations**: AI-driven product suggestions based on user inputs
 
 ### Interactive Features
 
@@ -47,11 +47,9 @@ A modern, responsive e-commerce platform built with React that provides a seamle
 - **Frontend Framework**: React
 - **State Management**: Redux with Redux Thunk
 - **Routing**: React Router DOM for navigation
-- **UI Framework**: Material-UI (MUI) with custom theming
 - **Styling**: Sass for advanced styling capabilities
-- **HTTP Client**: Axios for API communication
-- **Maps**: Google Maps API integration
-- **Carousel**: React Slick for product image galleries
+- **HTTP Request**: Fetch for API communication
+- **Address Autocomplete**: Google Maps API integration
 - **Payment**: PayPal REST SDK integration
 
 ## Project Structure
@@ -83,7 +81,7 @@ project-ecommerce/
 ```
 
 ## Integrations
-- **Google Maps API**: Location services and mapping
+- **Google Maps API**: Address autocomplete 
 - **PayPal REST SDK**: Payment processing
 - **OpenAI Integration**: AI-powered features (via backend)
 
